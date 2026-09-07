@@ -7,7 +7,7 @@ function Gallery() {
     const [datas, setDatas] = useState([])
 
     function fetchHousings() {
-        fetch("http://localhost:3000/datas.json")
+        fetch(`${process.env.PUBLIC_URL}/datas.json`)
             .then((response) => response.json())
             .then((datas) => {
                 setDatas(datas)

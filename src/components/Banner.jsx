@@ -4,7 +4,7 @@ import "../styles/Banner.css"
 
 function Banner() {
 
-    const aProposAdress = "http://localhost:3000/apropos"
+    const aProposAdress = `${process.env.PUBLIC_URL}/apropos`
     let currentAdress = window.location.href
 
     function isThisAPropos() {
